@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 
+{% load staticfiles %}
+
 <html>
 	<head>
 		<title>About</title>
@@ -7,12 +9,17 @@
 
 <body>
 	<div>
-		This is the 'about' page <br />
 		<strong>{{ boldmessage }}</strong><br />
 	</div>
 
 	<div>
-		<a href="/rango/">Index</a><br /
+		This tutorial has been put together by Jacob Osdin <br />
+		
+	</div>
+
+	<div>
+		<a href="/rango/">Index</a><br />
+		<img src="{{MEDIA_URL}}cat.jpg" /> 
 	</div>
 </body>
 
