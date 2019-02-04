@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
 
-<html>
-	<head>
-		<title>About</title>
-	</head>
+{% block title_block %}
+    About
+{% endblock %}
 
-<body>
+{% block body_block %}
 	<div>
 		<strong>{{ boldmessage }}</strong><br />
 	</div>
@@ -19,8 +17,5 @@
 
 	<div>
 		This tutorial has been put together by Jacob Osdin <br />
-		<a href="/rango/">Index</a><br />
 	</div>
-</body>
-
-</html>
+{% endblock %}
