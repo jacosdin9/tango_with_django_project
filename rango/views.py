@@ -211,6 +211,7 @@ def user_login(request):
         # blank dictionary object...
         return render(request, 'rango/login.html', {})
 
+@login_required
 def restricted(request):
     return render(request, 'rango/restricted.html', {})
 
